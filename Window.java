@@ -5,15 +5,12 @@ public class Window {
 	private Board board;
 	
 	public Window() {
-		window = new JFrame("Tereis Game");
+		window = new JFrame("Tertris Game");
 		window.setSize(WIDTH,HEIGHT);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.setResizable(false);
 		window.setLocationRelativeTo(null);
 		
-		board = new Board();
-		window.add(board);
-		window.addKeyListener(board);
 		window.setVisible(true);
 		
 	}
